@@ -19,7 +19,7 @@ body {
 .logo-b {
 	color: #000;
 }
-.logo-w {
+.logo-g {
 	color: #9d8665;
 }
 h1,
@@ -40,9 +40,8 @@ h4 {
 	display: flex;
 	flex-direction: column;
 
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+	height: 100%;
+	width: 100%;
 }
 .container {
 	padding: 0px 240px;
@@ -58,7 +57,6 @@ h4 {
 .section-b {
 	background: #000;
 	color: #fff;
-	height: 100%;
 }
 /*HEADER*/
 .header {
@@ -105,6 +103,7 @@ h4 {
 /*WELCOME*/
 .welcome {
 	height: 810px;
+	width: 100%;
 }
 .welcome__inner {
 	height: 750px;
@@ -185,6 +184,106 @@ h4 {
 	margin-right: 20px;
 }
 .arrow-r {
+}
+/*VIRTUAL*/
+.virtual {
+	padding-top: 75px;
+}
+.virtual__inner {
+	display: flex;
+	flex-direction: column;
+}
+.logo-line {
+	position: relative;
+	margin-bottom: 101px;
+}
+.logo-line:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -27px;
+	width: 100%;
+	height: 3px;
+	background-color: rgba(113, 7, 7, 1);
+}
+
+.virtual__cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0px -30px;
+}
+.virtual__card {
+	flex: 0 1 33.3%;
+	padding: 0px 30px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 73px;
+}
+.card__image {
+	margin-bottom: 25px;
+}
+.card__logo {
+}
+.logo-cardline {
+	position: relative;
+	margin-bottom: 23px;
+}
+.logo-cardline:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -13px;
+	width: 68%;
+	height: 3px;
+	background-color: rgba(113, 7, 7, 1);
+}
+.card__label {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 100;
+	font-style: 400;
+	letter-spacing: 0;
+	margin-bottom: 12px;
+}
+.card__sublabel {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 100;
+	font-style: normal;
+	letter-spacing: 0;
+}
+/*EXPLORE*/
+.explore {
+	padding: 75px 0px;
+}
+.explore__inner {
+	display: flex;
+}
+.explore__info {
+	display: flex;
+	flex-direction: column;
+	padding-right: 60px;
+	letter-spacing: 0;
+}
+
+.explore__description p {
+	margin-bottom: 30px;
+	line-height: 37px;
+}
+.explore__description span {
+	font-weight: 400;
+	color: rgba(157, 134, 101, 1);
+}
+
+.explore__image-container {
+	position: relative;
+	margin-top: 12px;
+}
+.explore-control {
+	position: absolute;
+	left: 58.5%;
 }
 /*FOOTER*/
 .footer {
