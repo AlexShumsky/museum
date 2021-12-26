@@ -1,4 +1,7 @@
 @import url("nullstyle.css");
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Roboto";
 	font-size: 22px;
@@ -45,9 +48,9 @@ h4 {
 }
 .container {
 	padding: 0px 240px;
-	width: 100%;
-	height: 100%;
+	max-width: 1920px;
 	margin: 0 auto;
+	height: 100%;
 }
 .content {
 	flex: 1 1 auto;
@@ -101,7 +104,7 @@ h4 {
 	flex-direction: column;
 }
 /*WELCOME*/
-.welcome {
+#Welcome {
 	height: 810px;
 	width: 100%;
 }
@@ -186,7 +189,7 @@ h4 {
 .arrow-r {
 }
 /*VIRTUAL*/
-.virtual {
+#Visiting {
 	padding-top: 75px;
 }
 .virtual__inner {
@@ -255,7 +258,7 @@ h4 {
 	letter-spacing: 0;
 }
 /*EXPLORE*/
-.explore {
+#Explore {
 	padding: 75px 0px;
 }
 .explore__inner {
@@ -286,7 +289,7 @@ h4 {
 	left: 58.5%;
 }
 /*VIDEO*/
-.video {
+#Video {
 	padding: 75px 0px;
 }
 .video__inner {
@@ -415,6 +418,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .video__slider {
 	height: 307px;
 	width: 100%;
+	overflow: hidden;
 }
 .video__slides {
 	height: 254px;
@@ -458,6 +462,152 @@ input[type="range"]::-webkit-slider-runnable-track {
 	background: rgba(51, 51, 51, 1);
 }
 
+/*GALLERY*/
+#Gallery {
+	position: relative;
+}
+.gallery__inner {
+	padding: 75px 0px;
+	height: 2200px;
+	overflow: hidden;
+}
+.gallery__albom {
+	padding-top: 125px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 35px;
+}
+.albom-column {
+	max-width: 456px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.albom-column:nth-child(2) {
+	margin-top: -50px;
+}
+.albom__picture {
+	height: fit-content;
+}
+.albom__picture img {
+	width: 100%;
+}
+.gallery__shadow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background: linear-gradient(0deg, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0));
+}
+/*TICKETS*/
+#Tickets {
+}
+.tickets__inner {
+	padding: 75px 0px;
+}
+.tickets__description {
+	display: flex;
+}
+.tickets__image {
+	margin-right: 60px;
+}
+.tickets__info {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: space-between;
+}
+.ticket__type {
+	width: 400px;
+}
+.ticket__type-inputs {
+	margin-top: 45px;
+}
+.ticket__type label {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0;
+
+	padding-left: 20px;
+}
+.ticket__type input {
+	margin-bottom: 27px;
+}
+.ticket__label {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33px;
+	letter-spacing: normal;
+}
+.ticket__amount {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.ticket__amount .ticket__label {
+	margin-bottom: 25px;
+}
+.ticket__order {
+	margin-bottom: 7px;
+}
+.form__button {
+	border: 3px solid #000;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.form__button button {
+	flex: 1 1 auto;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 38px;
+	text-align: center;
+	background: #fff;
+}
+.form__button input {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.order__label {
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 0;
+	line-height: 26px;
+	margin-bottom: 17px;
+}
+.ticket-total {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33px;
+	letter-spacing: 1.7px;
+	margin-top: 43px;
+}
+.ticket__button {
+	width: 175px;
+	height: 50px;
+	border-radius: 5px;
+
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 2px;
+
+	margin-top: 60px;
+	background: #000;
+	color: #fff;
+}
+/*PARALLAX*/
+#Parallax {
+	height: 400px;
+	background: url("../../assets/images/jpg/1920px/parallax.jpg") center / cover fixed;
+}
 /*FOOTER*/
 .footer {
 	background: blue;

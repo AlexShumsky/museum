@@ -43,7 +43,7 @@
 				</div>
 			</header>
 			<main class="main">
-				<section class="section-b welcome">
+				<section id="Welcome" class="section-b">
 					<div class="container">
 						<div class="welcome__inner">
 							<div class="welcome__info">
@@ -72,7 +72,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="virtual">
+				<section id="Visiting">
 					<div class="container">
 						<div class="virtual__inner">
 							<h2 class="logo logo-g logo-line">virtual tour</h2>
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="section-b explore">
+				<section id="Explore" class="section-b">
 					<div class="container">
 						<div class="explore__inner">
 							<div class="explore__info">
@@ -151,7 +151,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="video">
+				<section id="Video">
 					<div class="container">
 						<div class="video__inner">
 							<div class="video__info">
@@ -226,6 +226,109 @@
 						</div>
 					</div>
 				</section>
+				<section id="Gallery" class="section-b">
+					<div class="container">
+						<div class="gallery__inner">
+							<h2 class="logo">art gallery</h2>
+							<div class="gallery__albom">
+								<div class="albom-column">
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery1.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery3.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery4.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery2.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery5.jpg"
+											alt="gallery picture"></div>
+								</div>
+								<div class="albom-column">
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery6.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery7.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery8.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery9.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery10.jpg"
+											alt="gallery picture"></div>
+								</div>
+								<div class="albom-column">
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery11.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery12.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery13.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery14.jpg"
+											alt="gallery picture"></div>
+									<div class="albom__picture"><img src="assets/images/jpg/1920px/gallery/galery15.jpg"
+											alt="gallery picture"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__shadow"></div>
+				</section>
+				<section id="Tickets">
+					<div class="container">
+						<div class="tickets__inner">
+							<h2 class="logo logo-g logo-line">buy tickets</h2>
+							<div class="tickets__description">
+								<div class="tickets__image">
+									<img src="assets/images/jpg/1920px/tickets/Rectangle.jpg" alt="tickets picture">
+								</div>
+								<div class="tickets__info">
+									<div class="ticket__type">
+										<div class="ticket__label"> Ticket Type
+										</div>
+										<div class="ticket__type-inputs">
+											<div>
+												<input type="radio" name="type" id="permanent" value="Permanent exhibition" checked>
+												<label for="permanent">Permanent exhibition</label>
+											</div>
+											<div>
+												<input type="radio" name="type" id="temporary" value="Temporary exhibition">
+												<label for="temporary">Temporary exhibition</label>
+											</div>
+											<div>
+												<input type="radio" name="type" id="combined" value="Combined Admission">
+												<label for="combined">Combined Admission</label>
+											</div>
+										</div>
+									</div>
+									<div class="ticket__amount">
+										<div class="ticket__label"> Amount
+										</div>
+										<div class="ticket__order">
+											<div>
+												<div class="order__label">Basic 18+</div>
+												<div class="form__button">
+													<button type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+													<input type="number" min="0" max="20" value="1" readonly class="number">
+													<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												</div>
+											</div>
+										</div>
+										<div class="ticket__order">
+											<div class="order__label">Senior 65+</div>
+											<div class="form__button">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+												<input type="number" min="0" max="20" value="1" readonly class="number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											</div>
+										</div>
+										<div class="ticket-total">Total €220</div>
+										<button class="ticket__button">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="Parallax"></section>
 			</main>
 		</div>
 		<footer class="footer"></footer>
